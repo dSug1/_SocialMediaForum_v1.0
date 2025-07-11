@@ -75,6 +75,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	}
+/*	
 nav a:any-link{
 	color: var(--LIGHT-COLOR);
 	text-decoration: none;}
@@ -83,7 +84,18 @@ nav :is(a:hover, a:focus){
 	filter: brightness(150%);}
 footer{
 	bottom:0; 	position: sticky; text-align: center;}
+*/
 
+/*replaced with:*/
+
+a:any-link {
+	color: inherit;            /* Match the surrounding text color */
+	text-decoration: none;     /* Optional: remove underline */
+  }
+  a:hover, a:focus {
+	text-decoration: underline;
+	filter: brightness(110%);
+  }
 
 /* HEADER SETUP*/
 header{
@@ -230,6 +242,7 @@ card p{
 	margin-top: 1rem;
 	text-align: center;
 	position: relative;}
+
 .card p::after{
 	content: close-quote;
 	font-size: var(--FONT-MEDIUM);
