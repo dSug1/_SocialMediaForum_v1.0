@@ -119,12 +119,14 @@ header{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
 	flex-flow: column;
-	justify-content: start;}
+	justify-content: start;
+	max-width: 15%;}
 .header__title1{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
-	justify-content: start;
-	font-size: var(--FONT-LARGE);}
+	flex-shrink: 1;
+	/*justify-content: start;
+	font-size: var(--FONT-LARGE);*/}
 .header__title2{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
@@ -352,6 +354,7 @@ hr{ width: 25%;
 /*medium screen*/
 @media screen and (min-width: 768px){
 	/*main{gap: var(--GAP-MEDIUM);}*/
+	.header__title{max-width: 10%;}
 	.header__title2{ font-size: var(--FONT-SMALL);}
 	.card{ width: min(65%, 600px); }
 	/* .card figure{ flex-flow: column-reverse; } */}
@@ -362,18 +365,17 @@ hr{ width: 25%;
 		font-size: var(--FONT-XL);
 	}
 	.header__title1{ font-size: var(--FONTTITLE-LARGE);}
-	.header__title2{ font-size: var(--FONT-MEDIUM);}
+	.header__title2{ font-size: var(--FONT-SMALL);}
 	.card{ width: min(70%, 800px); }
 	.card figure{height: 20vh;}
 	.card h1{font-size: var(--FONT-LARGE);}
-	.card__text_contentTitle{ font-size: var(--FONT-LARGE); }
 	.card__text_author{font-size: var(--FONT-SMALL);}}
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
 	body{gap: 3rem;}
 	/*main{gap : var(--GAP-LARGE);}*/
 	header{ font-size: var(--FONT-XL); }	
-	.header__title1{ font-size: var(--FONTTITLE-XL);}
+	.header__title{max-width: 12%;}
 	.header__title2{ font-size: var(--FONT-MEDIUM);}
 	
 	.card{ /*width: min(calc(70% - 1rem), 1000px);*/
