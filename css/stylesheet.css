@@ -19,10 +19,10 @@ html{
 	/*fonts*/
 	--FONT-FAMILY: "Roboto", sans-serif;
 	--FONT-XS: min(0.5rem, 2.5vh);
-	--FONT-SMALL: min(0.5rem, 2.5vh);
+	--FONT-SMALL: min(0.9rem, 2.5vh);
 	--FONT-MEDIUM: clamp(1rem, 3vh, 1.5rem);
 	--FONT-LARGE: min(1.5rem, 8vh);
-	--FONT-XL: min(1.7rem, 9vh);
+	--FONT-XL: min(2.2rem, 9vh);
 	/*colors*/
 	--LIGHT-COLOR: whitesmoke;
 	--HEADER-BGCOLOR: transparent;
@@ -309,6 +309,7 @@ main{
 	body{gap: 3rem;}
 	header{ font-size: var(--FONT-LARGE); }	
 	.card{ width: min(calc(60% - 1rem), 1000px); gap: var(--GAP-LARGE);}
+	.card p{ font-size: var(--FONT-XL); }
 	.card:target{ width: 75%; }}
 /*mobile device landscape */
 @media screen and (max-height: 425px) and (min-aspect-ratio: 7/4){
