@@ -34,7 +34,8 @@ html{
 	--PADDING-SMALL: 2.5rem;
 	--PADDING-MEDIUM: 1rem;
 	--GAP-XSMALL: 1rem;
-	--GAP-SMALL: 5rem;
+	--GAP-SMALL: 1rem;
+	--GAP-LARGE: 3rem;
 	--BORDER-LIGHT:	2px solid var(--LIGHT-COLOR);
 	--MARGIN-SMALL: 3vw;
 	--MARGINLEFTMAIN-SMALL: 24vw;
@@ -212,7 +213,7 @@ main{
 	display: flex;
 	flex-flow: row;
 	justify-content: space-between;
-  	align-items: flex-start;
+  	align-items: center;
   	gap: var(--GAP-SMALL); 
 	}
 /*
@@ -226,11 +227,14 @@ main{
 	border: var(--BORDER-LIGHT); }
 */
 .card__text {
+	flex-basis: 40%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	flex: 1;                        /* Fill available space beside image */	  }
 .card figure{
+	flex-basis: 60%;
+	flex-shrink: 0;
 	display: flex;
 	/*flex-flow: column-reverse nowrap;*/}
 .card img{
@@ -297,7 +301,7 @@ main{
 		padding: var(--PADDING-MEDIUM);
 	}	
 	header{ top: 0.7%; }
-	.card{ width: min(80%, 400px); }}
+	.card{ width: min(80%, 400px); gap: var(--GAP-LARGE);}}
 /*medium screen*/
 @media screen and (min-width: 768px){
 	.card{ width: min(65%, 600px); }
