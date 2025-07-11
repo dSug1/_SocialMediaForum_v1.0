@@ -34,6 +34,7 @@ html{
 	/*general*/
 	--PADDING-XS: 0.1rem;
 	--PADDING-SMALL: 2.5rem;
+	--PADDING-MAIN-SMALL: 0.5rem;
 	--PADDING-MEDIUM: 1rem;
 	--GAP-XSMALL: 0.7rem;
 	--GAP-SMALL: 1rem;
@@ -215,8 +216,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: var(--GAP-XSMALL);
-	padding: var(--PADDING-SMALL);}
+	/*gap: var(--GAP-XSMALL);*/
+	padding: var(--PADDING-MAIN-SMALL);}
 
 /*SETUP OF CARDS*/
 .card{
@@ -230,8 +231,16 @@ main{
 	flex-flow: row;
 	justify-content: space-between;
   	align-items: center;
-  	gap: var(--GAP-SMALL); 
+  	gap: var(--GAP-SMALL);
+	padding: 5%;
+	/*border-bottom:var(--BORDER-LIGHT);   */
 	}
+
+hr{ width: 25%;
+	color: var(--BORDER-LIGHT);
+}
+/*.card:last-child{
+	border-bottom: none;}*/
 /*
 .card:target{ 
 	width: 100%;
@@ -266,8 +275,8 @@ main{
 .card figure{
 	flex-basis: 45%;
 	height: 15vh;
-	border: var(--BORDER-LIGHT);
-	border-radius: 20px;
+	/*border: var(--BORDER-LIGHT);
+	border-radius: 20px;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -276,7 +285,7 @@ main{
 	overflow: hidden;
 	/*flex-flow: column-reverse nowrap;*/}
 .card img{
-	padding: 2rem;
+	padding: 11%;
 	max-width: 100%;
 	max-height: 100%;
 	object-fit: contain;  /* preserves proportions without cropping */
@@ -329,7 +338,7 @@ main{
 @media screen and (min-width: 576px){
 	main{
 		padding: var(--PADDING-MEDIUM);
-		gap: var(--GAP-SMALL);
+		/*gap: var(--GAP-SMALL);*/
 	}	
 	header{ top: 0.7%; }
 	.header__title1{ font-size: var(--FONT-LARGE);}
@@ -338,9 +347,7 @@ main{
 }
 /*medium screen*/
 @media screen and (min-width: 768px){
-	main{
-		gap: var(--GAP-MEDIUM);
-	}
+	/*main{gap: var(--GAP-MEDIUM);}*/
 	.header__title2{ font-size: var(--FONT-SMALL);}
 	.card{ width: min(65%, 600px); }
 	/* .card figure{ flex-flow: column-reverse; } */}
@@ -359,11 +366,14 @@ main{
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
 	body{gap: 3rem;}
-	main{gap : var(--GAP-LARGE);}
+	/*main{gap : var(--GAP-LARGE);}*/
 	header{ font-size: var(--FONT-XL); }	
 	.header__title1{ font-size: var(--FONTTITLE-XL);}
 	.header__title2{ font-size: var(--FONT-MEDIUM);}
-	.card{ width: min(calc(60% - 1rem), 1000px); gap: var(--GAP-LARGE);}
+	
+	.card{ /*width: min(calc(70% - 1rem), 1000px);*/
+		width: min(70%, 1200px);
+		gap: var(--GAP-LARGE);}
 	.card__text_contentTitle{ font-size: var(--FONT-XL); }
 	.card__text_author{font-size: var(--FONT-MEDIUM);}
 	/*.card:target{ width: 75%; }*/}
