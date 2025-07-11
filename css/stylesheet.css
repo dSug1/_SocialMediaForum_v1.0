@@ -117,7 +117,7 @@ header{
 .header__title{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
-	width: max(10%, 121px);
+	width: max(10%, 121	px);
 	flex-flow: column;
 	justify-content: start;}
 .header__title1{
