@@ -31,7 +31,7 @@ html{
 	--NAVIGATION_LIST_COLOR: var(--LIGHT-COLOR);
 	/*general*/
 	--PADDING-XS: 0.1rem;
-	--PADDING-SMALL: 0.3rem;
+	--PADDING-SMALL: 2.5rem;
 	--PADDING-MEDIUM: 1rem;
 	--GAP-XSMALL: 1rem;
 	--GAP-SMALL: 5rem;
