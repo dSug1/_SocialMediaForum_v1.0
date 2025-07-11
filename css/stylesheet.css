@@ -243,7 +243,7 @@ main{
 	border: var(--BORDER-LIGHT); }
 */
 .card__text {
-	flex-basis: 45%;
+	flex-basis: 55%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -264,7 +264,7 @@ main{
 		
 
 .card figure{
-	flex-basis: 55%;
+	flex-basis: 45%;
 	height: 15vh;
 	border: var(--BORDER-LIGHT);
 	border-radius: 20px;
@@ -276,7 +276,7 @@ main{
 	overflow: hidden;
 	/*flex-flow: column-reverse nowrap;*/}
 .card img{
-	padding: 10%;
+	padding: 2rem;
 	max-width: 100%;
 	max-height: 100%;
 	object-fit: contain;  /* preserves proportions without cropping */
@@ -351,7 +351,7 @@ main{
 		font-size: var(--FONT-XL);
 	}
 	.header__title1{ font-size: var(--FONTTITLE-LARGE);}
-	.header__title2{ font-size: var(--FONT-LARGE);}
+	.header__title2{ font-size: var(--FONT-MEDIUM);}
 	.card{ width: min(70%, 800px); }
 	.card figure{height: 20vh;}
 	.card__text_contentTitle{ font-size: var(--FONT-LARGE); }
@@ -362,7 +362,7 @@ main{
 	main{gap : var(--GAP-LARGE);}
 	header{ font-size: var(--FONT-XL); }	
 	.header__title1{ font-size: var(--FONTTITLE-XL);}
-	.header__title2{ font-size: var(--FONT-XL);}
+	.header__title2{ font-size: var(--FONT-MEDIUM);}
 	.card{ width: min(calc(60% - 1rem), 1000px); gap: var(--GAP-LARGE);}
 	.card__text_contentTitle{ font-size: var(--FONT-XL); }
 	.card__text_author{font-size: var(--FONT-MEDIUM);}
