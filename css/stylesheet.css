@@ -33,6 +33,7 @@ html{
 	--PADDING-XS: 0.1rem;
 	--PADDING-SMALL: 0.3rem;
 	--PADDING-MEDIUM: 1rem;
+	--GAP-SMALL: 5rem;
 	--BORDER-LIGHT:	2px solid var(--LIGHT-COLOR);
 	--MARGIN-SMALL: 3vw;
 	--MARGINLEFTMAIN-SMALL: 24vw;
@@ -191,9 +192,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 0.5rem;
+	gap: var(--GAP-SMALL);
 	/*margin-left: var(--MARGINLEFTMAIN-SMALL);*/
-
 	padding: var(--PADDING-SMALL);}
 
 /*SETUP OF CARDS*/
@@ -204,13 +204,12 @@ main{
 	border: var(--BORDER-LIGHT);
 	border-radius: 10px;
 	*/
-	width: 57%;
-
-	padding: var(--PADDING-SMALL);
-	
 	display: flex;
-	flex-flow: column;
-	align-items: center;}
+	flex-flow: row;
+	justify-content: space-between;
+  	align-items: flex-start;
+  	gap: var(--GAP-SMALL); 
+	}
 .card:target{ 
 	width: 100%;
 	transition: all 0.2s ease-in-out 0s;}
@@ -219,6 +218,11 @@ main{
 	transition: all 0.2s ease-in-out 0s;}
 .card:target img{
 	border: var(--BORDER-LIGHT); }
+.card__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;                        /* Fill available space beside image */	  }
 .card figure{
 	display: flex;
 	flex-flow: column-reverse nowrap;}
