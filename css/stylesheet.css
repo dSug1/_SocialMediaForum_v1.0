@@ -23,6 +23,8 @@ html{
 	--FONT-MEDIUM: clamp(1.1rem, 3vh, 1.5rem);
 	--FONT-LARGE: min(1.5rem, 8vh);
 	--FONT-XL: min(2.2rem, 9vh);
+	--FONTTITLE-LARGE: min(2.5rem, 8vh);
+	--FONTTITLE-XL: min(4rem, 8vh);
 	/*colors*/
 	--LIGHT-COLOR: whitesmoke;
 	--HEADER-BGCOLOR: transparent;
@@ -33,8 +35,9 @@ html{
 	--PADDING-XS: 0.1rem;
 	--PADDING-SMALL: 2.5rem;
 	--PADDING-MEDIUM: 1rem;
-	--GAP-XSMALL: 0.5rem;
+	--GAP-XSMALL: 0.7rem;
 	--GAP-SMALL: 1rem;
+	--GAP-MEDIUM: 1.2rem;
 	--GAP-LARGE: 1.5rem;
 	--BORDER-LIGHT:	2px solid var(--LIGHT-COLOR);
 	--MARGIN-SMALL: 3vw;
@@ -67,14 +70,11 @@ body::before {
 body{
 	position: relative;
 	height: 100vh;
-
 	font-family: var(--FONT-FAMILY);
 	font-size: var(--FONT-SMALL);
 	color: var(--LIGHT-COLOR);
 	/*gap: 1rem;*/
-
 	backdrop-filter: brightness(70%);
-	
 	display: flex;
 	flex-direction: column;
 	}
@@ -117,13 +117,13 @@ header{
 .header__title{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
-	width: max(10%, 121	px);
 	flex-flow: column;
 	justify-content: start;}
 .header__title1{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
-	justify-content: start;}
+	justify-content: start;
+	font-size: var(--FONT-MEDIUM);}
 .header__title2{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
@@ -267,6 +267,7 @@ main{
 	flex-basis: 55%;
 	flex-shrink: 0;
 	display: flex;
+	height: 15vh;
 	/*flex-flow: column-reverse nowrap;*/}
 .card img{
 	margin-top: 0.7rem;
@@ -318,13 +319,18 @@ main{
 @media screen and (min-width: 576px){
 	main{
 		padding: var(--PADDING-MEDIUM);
+		gap: var(--GAP-SMALL);
 	}	
 	header{ top: 0.7%; }
+	.header__title1{ font-size: var(--FONT-LARGE);}
 	.card{ width: min(80%, 400px); gap: var(--GAP-SMALL);}
 	.card__text_contentTitle{ font-size: var(--FONT-MEDIUM); }
 }
 /*medium screen*/
 @media screen and (min-width: 768px){
+	main{
+		gap: var(--GAP-MEDIUM);
+	}
 	.header__title2{ font-size: var(--FONT-SMALL);}
 	.card{ width: min(65%, 600px); }
 	/* .card figure{ flex-flow: column-reverse; } */
@@ -336,14 +342,19 @@ main{
 		top: 0.7%;
 		font-size: var(--FONT-SMALL);
 	}
+	.header__title1{ font-size: var(--FONTTITLE-LARGE);}
+	.header__title2{ font-size: var(--FONT-LARGE);}
 	.card{ width: min(70%, 800px); }
+	.card figure{height: 20vh;}
 	.card__text_contentTitle{ font-size: var(--FONT-LARGE); }
 	.card__text_author{font-size: var(--FONT-SMALL);}}
 /*xlarge screen*/
 @media screen and (min-width: 1200px){
 	body{gap: 3rem;}
+	main{gap : var(--GAP-LARGE);}
 	header{ font-size: var(--FONT-LARGE); }	
-	.header__title2{ font-size: var(--FONT-MEDIUM);}
+	.header__title1{ font-size: var(--FONTTITLE-XL);}
+	.header__title2{ font-size: var(--FONT-XL);}
 	.card{ width: min(calc(60% - 1rem), 1000px); gap: var(--GAP-LARGE);}
 	.card__text_contentTitle{ font-size: var(--FONT-XL); }
 	.card__text_author{font-size: var(--FONT-MEDIUM);}
