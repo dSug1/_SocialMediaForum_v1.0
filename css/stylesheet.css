@@ -265,14 +265,23 @@ main{
 
 .card figure{
 	flex-basis: 55%;
-	display: flex;
 	height: 15vh;
 	border: var(--BORDER-LIGHT);
 	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;     /* or your preferred width */
+	/*height: 100%;    /* ensures it fills the card's height */
+	overflow: hidden;
 	/*flex-flow: column-reverse nowrap;*/}
 .card img{
-	margin: 0.7rem;
-	
+	padding: 10%;
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;  /* preserves proportions without cropping */
+	display: block;
+
 }
 /* .card img[alt]{	border-color: red; } */
 /* .card img:not([alt]){ border-color: red; } */
