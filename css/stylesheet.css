@@ -343,9 +343,7 @@ main{
 	}
 	.header__title2{ font-size: var(--FONT-SMALL);}
 	.card{ width: min(65%, 600px); }
-	/* .card figure{ flex-flow: column-reverse; } */
-	.card p{ margin: 0.1em 0; }
-	.card figcaption{ margin: 0.1em 0; }}
+	/* .card figure{ flex-flow: column-reverse; } */}
 /*large screen*/
 @media screen and (min-width: 992px){
 	header{
