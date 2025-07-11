@@ -21,7 +21,7 @@ html{
 	--FONT-XS: min(0.7rem, 2.5vh);
 	--FONT-SMALL: min(0.9rem, 2.5vh);
 	--FONT-MEDIUM: clamp(1.1rem, 3vh, 1.5rem);
-	--FONT-LARGE: min(1.5rem, 8vh);
+	--FONT-LARGE: min(1.7rem, 8vh);
 	--FONT-XL: min(2.2rem, 9vh);
 	--FONTTITLE-LARGE: min(2.5rem, 8vh);
 	--FONTTITLE-XL: min(4rem, 8vh);
@@ -106,8 +106,8 @@ header{
 	/*position: sticky;
 	top: 4.2vh;
 	replaced with:*/
-
 	text-align: center;
+	font-size: var(--FONT-MEDIUM);
 }
 .header__title-line{
 	margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);
@@ -123,7 +123,7 @@ header{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
 	justify-content: start;
-	font-size: var(--FONT-MEDIUM);}
+	font-size: var(--FONT-LARGE);}
 .header__title2{
 	/*margin: 0 var(--MARGIN-SMALL) 0 var(--MARGIN-SMALL);*/
 	display: flex;
@@ -340,7 +340,7 @@ main{
 @media screen and (min-width: 992px){
 	header{
 		top: 0.7%;
-		font-size: var(--FONT-SMALL);
+		font-size: var(--FONT-XL);
 	}
 	.header__title1{ font-size: var(--FONTTITLE-LARGE);}
 	.header__title2{ font-size: var(--FONT-LARGE);}
@@ -352,7 +352,7 @@ main{
 @media screen and (min-width: 1200px){
 	body{gap: 3rem;}
 	main{gap : var(--GAP-LARGE);}
-	header{ font-size: var(--FONT-LARGE); }	
+	header{ font-size: var(--FONT-XL); }	
 	.header__title1{ font-size: var(--FONTTITLE-XL);}
 	.header__title2{ font-size: var(--FONT-XL);}
 	.card{ width: min(calc(60% - 1rem), 1000px); gap: var(--GAP-LARGE);}
