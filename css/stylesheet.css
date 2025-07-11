@@ -374,6 +374,7 @@ hr{ width: 25%;
 	.card{ /*width: min(calc(70% - 1rem), 1000px);*/
 		width: min(70%, 1200px);
 		gap: var(--GAP-LARGE);}
+	.card img{padding: 6%;}
 	.card__text_contentTitle{ font-size: var(--FONT-XL); }
 	.card__text_author{font-size: var(--FONT-MEDIUM);}
 	/*.card:target{ width: 75%; }*/}
