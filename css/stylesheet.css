@@ -230,25 +230,40 @@ main{
 	border-radius: 20px;}
 /* .card img[alt]{	border-color: red; } */
 /* .card img:not([alt]){ border-color: red; } */
+/*
 .card p::before{
 	content: open-quote;
 	font-size: var(--FONT-MEDIUM);
 	position: absolute;
 	top: -0.25em;
 	left: -0.5em;}
-card p{
+	*/
+/*card p{
 	font-weight: 200;
 	font-size: var(--FONT-MEDIUM);
 	margin-top: 1rem;
 	text-align: center;
 	position: relative;}
+*/
 
-.card p::after{
+.card p {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s linear 0.3s, opacity 0.3s ease;}
+  
+.card:hover p, .card img:hover + p {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s;}
+
+/*
+	.card p::after{
 	content: close-quote;
 	font-size: var(--FONT-MEDIUM);
 	position: absolute;
 	top: -0.25em;
-	right: -0.5em;}
+	right: -0.5em;}*/
+
 .card figcaption{
 	font-weight: 100;
 	font-size: var(--FONT-SMALL);
