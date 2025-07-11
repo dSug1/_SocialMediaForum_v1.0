@@ -222,7 +222,7 @@ main{
 /*SETUP OF CARDS*/
 .card{
 	/*scroll-margin-top: 5rem;				/* to be adjusted*/
-	/*width: min(70%, 100px);*/
+	width: 75%;
 	/*
 	border: var(--BORDER-LIGHT);
 	border-radius: 10px;
@@ -279,19 +279,22 @@ hr{ width: 25%;
 	border-radius: 20px;*/
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 100%;     /* or your preferred width */
+	justify-content: end;
+	/*width: 100%;     or your preferred width */
 	/*height: 100%;    /* ensures it fills the card's height */
 	overflow: hidden;
 	/*flex-flow: column-reverse nowrap;*/}
-.card img{
+.card h1{
+	text-align:end;
+	font-size: var(--FONT-SMALL);
+}
+/*.card img{
 	padding: 11%;
 	max-width: 100%;
 	max-height: 100%;
-	object-fit: contain;  /* preserves proportions without cropping */
+	object-fit: contain;  preserves proportions without cropping
 	display: block;
-
-}
+}*/
 /* .card img[alt]{	border-color: red; } */
 /* .card img:not([alt]){ border-color: red; } */
 /*
@@ -344,6 +347,7 @@ hr{ width: 25%;
 	.header__title1{ font-size: var(--FONT-LARGE);}
 	.card{ width: min(80%, 400px); gap: var(--GAP-SMALL);}
 	.card__text_contentTitle{ font-size: var(--FONT-MEDIUM); }
+	.card h1{font-size: var(--FONT-MEDIUM);}
 }
 /*medium screen*/
 @media screen and (min-width: 768px){
@@ -361,6 +365,7 @@ hr{ width: 25%;
 	.header__title2{ font-size: var(--FONT-MEDIUM);}
 	.card{ width: min(70%, 800px); }
 	.card figure{height: 20vh;}
+	.card h1{font-size: var(--FONT-LARGE);}
 	.card__text_contentTitle{ font-size: var(--FONT-LARGE); }
 	.card__text_author{font-size: var(--FONT-SMALL);}}
 /*xlarge screen*/
@@ -374,7 +379,8 @@ hr{ width: 25%;
 	.card{ /*width: min(calc(70% - 1rem), 1000px);*/
 		width: min(70%, 1200px);
 		gap: var(--GAP-LARGE);}
-	.card img{padding: 6%;}
+	/*.card img{padding: 6%;}*/
+	.card h1{font-size: var(--FONT-XL);}
 	.card__text_contentTitle{ font-size: var(--FONT-XL); }
 	.card__text_author{font-size: var(--FONT-MEDIUM);}
 	/*.card:target{ width: 75%; }*/}
