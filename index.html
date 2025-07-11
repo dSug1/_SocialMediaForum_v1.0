@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+    <title>CSS Welcome page</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+
+    <header>
+        <section class="header__title-line">
+            <h1>Our creations</h1>
+            <button class="header__menu-button">
+                <span class="header__menu-icon"></span>
+            </button>
+        </section>
+
+        <nav class="header__navigation">
+            <ul class="header__navlist">
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#">Home</a></li>
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#project1">Arctic game</a></li>
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#project2">Beach - Cycles</a></li>
+                <li class="header__navlistitem"><a class="header__navlistitem-anchor" href="#project3">Beach - Evee</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <a href="https://dsug1.github.io/build3/" id="project1" class="card">
+            <figure>
+                <img src="Assets/image1.png" alt="Arctic Game" width="1420" height="842">          <!-- update the width and the height of the image -->
+                <figcaption><span class="nowrap">Arctic Game</span></figcaption>
+            </figure>
+            <p>with Unity assets</p>
+        </a>
+        <article id="project2" class="card">
+            <figure>
+                <img src="Assets/image2.png" alt="Cycles rendering" width="1600" height="1200">       <!-- update the width and the height of the image -->
+                <figcaption><span class="nowrap">Beach - Cycles rendering </span></figcaption>
+            </figure>
+            <p>rendered with Blender</p>
+        </article>
+        <article id="project3" class="card">
+            <figure>
+                <img src="Assets/image3.png" alt="Evee rendering" width="1600" height="1200">     <!-- update the width and the height of the image -->
+                <figcaption><span class="nowrap">Beach - Evee rendering</span></figcaption>
+            </figure>
+            <p>rendered with Blender</p>
+        </article>
+
+
+     </main>
+ 
+     <footer>
+        <p>&copy; Dsug1</p>
+     </footer>
+
+</body>
+</html>
