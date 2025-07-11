@@ -76,12 +76,24 @@ body{
 	flex-direction: column;
 	}
 
+/*	
 nav a:any-link{
 	color: var(--LIGHT-COLOR);
 	text-decoration: none;}
 nav :is(a:hover, a:focus){
 	text-decoration: underline;
 	filter: brightness(150%);}
+*/
+
+/*replaced with: */
+
+a:any-link{
+	color: var(--LIGHT-COLOR);
+	text-decoration: none;}
+:is(a:hover, a:focus){
+	text-decoration: none;
+	filter: brightness(105%);}
+
 
 footer{
 	bottom:0; 	position: sticky; text-align: center;}
@@ -247,7 +259,7 @@ main{
   
 .card:hover p, .card img:hover + p {
 
-	text-decoration: underline;
+	text-decoration: none;
 	color: var(--LIGHT-COLOR);
 	visibility: visible;
 	opacity: 1;
