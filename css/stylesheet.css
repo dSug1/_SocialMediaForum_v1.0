@@ -55,7 +55,7 @@ body::before {
     bottom: 0;
     right: 0;
 
-    background: no-repeat center url("../Assets/image2.png");
+    background: no-repeat center url(https://cdn.prod.website-files.com/5f8dd67f8fdd6f51f0b50904/66ebf1006b0eb144de088fe0_BG-downloads.webp);
 	background-size: cover;
 	opacity: .6;
 
