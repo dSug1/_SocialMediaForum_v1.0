@@ -1,4 +1,4 @@
-﻿@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
 
 /* start RESET*/
 
@@ -17,7 +17,7 @@ html{
 /* VARIABLES */
 :root{
 	/*fonts*/
-	--FONT-FAMILY: "Roboto", sans-serif;
+	--FONT-FAMILY: "Hanken Grotesk", sans-serif;
 	--FONT-XS: min(0.7rem, 2.5vh);
 	--FONT-SMALL: min(0.9rem, 2.5vh);
 	--FONT-MEDIUM: clamp(1.1rem, 3vh, 1.5rem);
